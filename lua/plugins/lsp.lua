@@ -1,6 +1,7 @@
 -- Main LSP Configuration
 return {
   "neovim/nvim-lspconfig",
+  event = "BufReadPost",
   dependencies = {
     -- Automatically install LSPs and related tools to stdpath for Neovim
     { "williamboman/mason.nvim", opts = {} },
@@ -124,9 +125,9 @@ return {
       underline = { severity = vim.diagnostic.severity.ERROR },
       signs = vim.g.have_nerd_font and {
         text = {
-          [vim.diagnostic.severity.ERROR] = "󰅚 ",
-          [vim.diagnostic.severity.WARN] = "󰀪 ",
-          [vim.diagnostic.severity.INFO] = "󰋽 ",
+          [vim.diagnostic.severity.ERROR] = " ",
+          [vim.diagnostic.severity.WARN] = " ",
+          [vim.diagnostic.severity.INFO] = " ",
           [vim.diagnostic.severity.HINT] = "󰌶 ",
         },
       } or {},
