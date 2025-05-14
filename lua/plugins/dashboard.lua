@@ -14,7 +14,7 @@ return {
         },
         shortcut = {
           {
-            icon = "󰆧 ",
+            icon = " ",
             desc = "home",
             action = "vim.ui.open('https://github.com/b-coimbra/nvim')",
             key = "h",
@@ -27,7 +27,7 @@ return {
             key = "u",
           },
           {
-            icon = " ",
+            icon = " ",
             group = "@label",
             desc = "config",
             action = function()

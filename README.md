@@ -1,12 +1,10 @@
-# My Neovim Configuration
-
 <p align="center">
-  <img src="https://i.imgur.com/N32Nnfu.png">
+  <img src="https://i.imgur.com/dFCxSry.png">
 </p>
 
 ## Dependencies
 
-- `nvim v0.12`
+- `nvim` v0.12+
 - `ripgrep` for Telescope fuzzy finding
 
 ## Installation
