@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/dFCxSry.png">
+  <img src="https://i.imgur.com/cbG2BbO.png">
 </p>
 
 ## Dependencies
