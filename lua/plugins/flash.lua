@@ -2,7 +2,21 @@
 return {
   "folke/flash.nvim",
   event = "VeryLazy",
-  opts = {},
+  opts = {
+    highlight = {
+      groups = {
+        label = "@keyword.operator",
+      },
+    },
+    modes = {
+      search = {
+        enabled = true,
+      },
+      char = {
+        highlight = { backdrop = false },
+      },
+    },
+  },
   -- stylua: ignore
   keys = {
     { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
