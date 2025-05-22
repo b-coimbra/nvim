@@ -2,9 +2,10 @@
 return {
   "mikavilpas/yazi.nvim",
   event = "VeryLazy",
-  enabled = function()
-    return vim.fn.executable("yazi") == 1
-  end,
+  enabled = false,
+  -- enabled = function()
+  --   return vim.fn.executable("yazi") == 1
+  -- end,
   dependencies = { "folke/snacks.nvim" },
   keys = {
     {
