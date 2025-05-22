@@ -8,14 +8,13 @@ return {
     require("kanagawa").setup({
       compile = true,
       colors = {
-        theme = {
-          all = {
-            ui = {
-              bg_gutter = "none",
-            },
-          },
-        },
+        theme = { all = { ui = { bg_gutter = "none" } } },
       },
+      overrides = function(colors)
+        return {
+          CursorLineNr = { fg = colors.palette.sakuraPink, bg = "NONE" },
+        }
+      end,
     })
 
     vim.cmd.colorscheme("kanagawa-dragon")
