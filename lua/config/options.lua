@@ -1,9 +1,7 @@
 local set = vim.opt
 
--- Set to true if you have a Nerd Font installed and selected in the terminal
+-- Enable nerd font ligatures
 vim.g.have_nerd_font = true
-
--- [[ Setting options ]]
 
 -- Enable relative line numbers
 set.number = true
@@ -53,7 +51,11 @@ set.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 set.inccommand = "split"
 
 -- Show which line your cursor is on
-set.cursorline = false
+set.cursorline = true
+set.cursorlineopt = "number"
+
+-- Consider dots as separate keywords for navigating with w/W
+set.iskeyword = "."
 
 -- Minimal number of screen lines to keep above and below the cursor.
 set.scrolloff = 0

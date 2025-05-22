@@ -11,6 +11,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Disable deprecation warnings
+---@diagnostic disable-next-line: duplicate-set-field
+vim.deprecate = function() end
+
 require("lazy").setup({
   { import = "plugins" },
 }, {
