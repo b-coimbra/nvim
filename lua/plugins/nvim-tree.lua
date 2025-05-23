@@ -1,6 +1,5 @@
 return {
   "nvim-tree/nvim-tree.lua",
-  config = true,
   keys = {
     {
       "<leader>tt",
